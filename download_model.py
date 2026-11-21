@@ -6,6 +6,8 @@ import dagshub
 import mlflow
 import mlflow.sklearn
 
+# Authenticate using the GitHub Secret
+dagshub.auth.add_app_token(os.environ["fd33be470e89bd812d6586c7ede8e63e7ec4ceb5"])
 
 # Connect to the DagsHub repository and configure MLflow
 dagshub.init(
@@ -15,7 +17,7 @@ dagshub.init(
 )
 
 # Select the experiment containing the models we want to deploy
-EXPERIMENT_NAME = "RandomForest_V1.0.1"
+EXPERIMENT_NAME = "RandomForest_V1"
 ARTIFACT_PATH = "model"
 
 experiment = mlflow.get_experiment_by_name(EXPERIMENT_NAME)
