@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+mlflow==2.22.0
+dagshub==0.7.3
+scikit-learn==1.8.0
+numpy
