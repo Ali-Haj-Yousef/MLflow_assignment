@@ -7,7 +7,7 @@ import mlflow
 import mlflow.sklearn
 
 # Authenticate using the GitHub Secret
-dagshub.auth.add_app_token(os.environ["DAGSHUB_TOKEN"])
+dagshub.auth.add_app_token("fd33be470e89bd812d6586c7ede8e63e7ec4ceb5")
 
 # Connect to the DagsHub repository and configure MLflow
 dagshub.init(
