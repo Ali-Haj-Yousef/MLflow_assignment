@@ -45,5 +45,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/my-model-api:latest
-            ${{ secrets.DOCKERHUB_USERNAME }}/my-model-api:${{ github.sha }}
+            ${{ vars.DOCKERHUB_USERNAME }}/my-model-api:latest
+            ${{ vars.DOCKERHUB_USERNAME }}/my-model-api:${{ github.sha }}
